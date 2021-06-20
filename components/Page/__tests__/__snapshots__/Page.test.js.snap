@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Page /> component rendering should render a component matching the snapshot 1`] = `
+<page__StyledPage>
+  <_default />
+  <page__Inner />
+</page__StyledPage>
+`;

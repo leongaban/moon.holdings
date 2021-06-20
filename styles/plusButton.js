@@ -1,0 +1,46 @@
+import styled from 'styled-components';
+
+export const PlusButtonStyle = styled.button`
+  z-index: 9;
+  position: fixed;
+  bottom: 2rem;
+  left: 30px;
+  padding-top: 2rem;
+  width: 8rem;
+  height: 8rem;
+  text-align: center;
+  background: rgba(87, 56, 92, 0.85);
+  /* background-color: rgba(0, 0, 0, 0); */
+  border: 2px solid rgba(87, 56, 92, 0);
+  transition: ${props => props.theme.transitionAll};
+  outline-width: 0;
+
+  h1 {
+    margin-top: 0.25rem;
+    height: 5rem;
+    font-family: 'Abel', sans-serif;
+    font-size: 1rem;
+    color: ${props => props.theme.offWhite};
+  }
+
+  span {
+    font-size: 5rem;
+    line-height: 3rem;
+    color: ${props => props.theme.apricot};
+  }
+
+  :hover {
+    background: ${props => props.theme.apricot};
+    border: 2px solid ${props => props.theme.brightPurple};
+    h1 { color: ${props => props.theme.darkPurple}; }
+    span { color: #fff }
+  }
+
+  :active {
+    background: none;
+    h1 { color: #fff; }
+    span { color: ${props => props.theme.apricot}; }
+  }
+
+  @media (max-width: 767px) { bottom: 1rem; left: 1rem; }
+`

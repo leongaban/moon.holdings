@@ -1,0 +1,87 @@
+{
+  "name": "moon.holdings",
+  "version": "2.0.0",
+  "description": "Moon Holdings: track your cryptocurrency portfolio.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next -p 7777",
+    "build": "next build",
+    "start": "next -p 7777",
+    "test": "NODE_ENV=test jest --no-cache",
+    "test-watch": "NODE_ENV=test jest --watch --no-cache",
+    "coverage": "jest --coverage"
+  },
+  "author": "Futuratum",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
+    "@zeit/next-typescript": "^1.1.1",
+    "axios": "^0.18.1",
+    "decko": "^1.2.0",
+    "next": "^8.1.0",
+    "next-routes": "^1.4.2",
+    "node-sass": "^4.12.0",
+    "ramda": "^0.26.1",
+    "ramda-adjunct": "^2.17.0",
+    "react": "^16.8.0",
+    "react-adopt": "^0.6.0",
+    "react-dom": "^16.8.0",
+    "react-ga": "^2.5.7",
+    "react-redux": "^6.0.0",
+    "react-transition-group": "^2.5.0",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-thunk": "^2.3.0",
+    "styled-components": "4.0.3",
+    "tslint": "^5.12.1",
+    "tslint-react": "^3.6.0",
+    "typescript": "^3.2.4",
+    "waait": "^1.0.2"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.3.0",
+    "@babel/preset-typescript": "^7.1.0",
+    "@types/enzyme": "^3.1.15",
+    "@types/jest": "^23.3.13",
+    "@types/next": "^7.0.6",
+    "@types/ramda": "^0.25.49",
+    "@types/react": "^16.7.20",
+    "@types/react-dom": "^16.0.11",
+    "@types/react-redux": "^7.0.1",
+    "@types/styled-components": "4.0.3",
+    "@types/zeit__next-typescript": "^0.1.1",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^24.1.0",
+    "babel-plugin-sass-vars": "^0.2.1",
+    "babel-plugin-styled-components": "^1.10.0",
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.5.0",
+    "enzyme-to-json": "^3.3.4",
+    "jest": "^24.1.0"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/jest.setup.js"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootDir>/.next/",
+      "<rootDir>/node_modules/"
+    ],
+    "transform": {
+      ".*": "babel-jest",
+      "^.+\\.js?$": "babel-jest",
+      "^.+\\.ts?$": "babel-jest",
+      "^.+\\.tsx?$": "babel-jest"
+    },
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts",
+      "tsx"
+    ],
+    "modulePaths": [
+      "<rootDir>/components/",
+      "<rootDir>/pages/",
+      "<rootDir>/shared/"
+    ]
+  }
+}
